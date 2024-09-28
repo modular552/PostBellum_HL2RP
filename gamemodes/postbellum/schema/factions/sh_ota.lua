@@ -20,7 +20,7 @@ FACTION.models = {
 
 -- Called when a player's name should be assigned for the faction.
 function FACTION:GetName(player, character)
-	return "C17.OTA.SWORD.OWS:"..Clockwork.kernel:ZeroNumberToDigits(math.random(1, 999), 3);
+	return "C17.OTA.ECHO.OWS:"..Clockwork.kernel:ZeroNumberToDigits(math.random(1, 999), 3);
 end;
 
 -- Called when a player's model should be assigned for the faction.
@@ -35,7 +35,7 @@ end;
 -- Called when a player is transferred to the faction.
 function FACTION:OnTransferred(player, faction, name)
 	if (faction.name == FACTION_MPF) then
-		Clockwork.player:SetName(player, string.gsub(player:QueryCharacter("name"), ".+(%d%d%d%d%d)", "C17.OTA.GUARD.OWS:%1"), true);
+		Clockwork.player:SetName(player, string.gsub(player:QueryCharacter("name"), ".+(%d%d%d%d%d)", "C17.OTA.ECHO.OWS:%1"), true);
 	else
 		Clockwork.player:SetName(player, self:GetName(player, player:GetCharacter()), true);
 	end;

@@ -10,6 +10,8 @@ local FACTION = Clockwork.faction:New("Гражданская Оборона");
 FACTION.whitelist = true;
 FACTION.maximumAttributePoints = 45;
 FACTION.material = "cdev2_pb/factions/mpf";
+FACTION.startChatNoise = "npc/overwatch/radiovoice/on3.wav";
+FACTION.endChatNoise = "npc/overwatch/radiovoice/off2.wav";
 FACTION.models = {
 	female = {
 		"models/hl2rp/metropolice/hl2_femalecp1.mdl",

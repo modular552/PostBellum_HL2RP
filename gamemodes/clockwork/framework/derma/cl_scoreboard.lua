@@ -28,6 +28,13 @@ function PANEL:Init()
  	self.panelList:SetSpacing(2);
  	self.panelList:SizeToContents();
 	self.panelList:EnableVerticalScrollbar();
+
+	self.refreshButton = self:Add("DButton")
+	self.refreshButton:SetPos(4, 3)
+	self.refreshButton:SetText("Обновить")
+	self.refreshButton.DoClick = function()
+		self:Rebuild()
+	end
 	
 	Clockwork.scoreboard = self;
 	Clockwork.scoreboard:Rebuild();

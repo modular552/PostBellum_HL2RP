@@ -10,7 +10,7 @@ HL2RP framework for Garry's Mod based on Clockwork
 Далее libboost и прочее dll файлы закидываем в папку GarrysModDS, а остальные папки в папку garrysmod
 Код для start.bat :
 ```
-start "SRCDS" /B srcds.exe -game garrysmod -conlog -port 27015 -console -conclearlog -condebug -tvdisable -maxplayers 10 +gamemode postbellum +r_hunkalloclightmaps 0 +map rp_pb_industrial17_v2 -tickrate 33 +fps_max 33 +host_workshop_collection "414788549" +sv_lan 0
+start "SRCDS" /B srcds.exe -game garrysmod -conlog -port 27015 -console -conclearlog -condebug -tvdisable -maxplayers 100 +gamemode postbellum +r_hunkalloclightmaps 0 +map rp_pb_industrial17_v2 -tickrate 33 +fps_max 33 +host_workshop_collection "414788549" +sv_lan 0
 ```
 
 **Я не несу ответственности за внезапную поломку, а также другие последствия, связанные с сборкой. Если что-то не работает - все на ваш страх и риск.**

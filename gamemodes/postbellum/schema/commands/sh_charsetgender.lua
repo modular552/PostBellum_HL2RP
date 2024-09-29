@@ -18,8 +18,6 @@ COMMAND.arguments = 2;
 
 -- Called when the command has been run.
 function COMMAND:OnRun(player, arguments)
-	if (player:SteamID() != "STEAM_0:0:43729643" and player:SteamID() != "STEAM_0:0:39840171") then return end;
-	
 	local gender = string.lower(arguments[2])
 	
 	if (gender == "f" or gender == "female" or gender == "fem") then
